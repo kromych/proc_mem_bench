@@ -1,8 +1,8 @@
 ## `pread` vs `process_vm_read` when reading remote process memory
 
 This code measures performance of the two APIs when reading the memory of the remote
-process. That might be useful for the debuggers and other tools instrospecting the
-state of another processes. From the below data (rather limmited yet coming from
+process. That might be useful for the debuggers and other tools alike that instrospect
+the state of another processes. From the below data (rather limited yet coming from
 two very diffrent systems) it follows that when reading at least `8KiB` of data from
 the remote process, `process_vm_read` is significantly more performant.
 
