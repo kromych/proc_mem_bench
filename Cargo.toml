@@ -1,0 +1,17 @@
+[package]
+name = "proc_mem_bench"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "allocate"
+path = "src/bin/allocate.rs"
+
+[[bin]]
+name = "read"
+path = "src/bin/read.rs"
+
+[dependencies]
+easybench = "1.1.1"
+nix = "0.26"
+zerocopy = "0.6"
